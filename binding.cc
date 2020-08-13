@@ -1497,7 +1497,7 @@ namespace zmq {
     opts_int.insert(35); // ZMQ_TCP_KEEPALIVE_CNT
     opts_int.insert(36); // ZMQ_TCP_KEEPALIVE_IDLE
     opts_int.insert(37); // ZMQ_TCP_KEEPALIVE_INTVL
-    opts_int.insert(39); // ZMQ_DELAY_ATTACH_ON_CONNECT
+    opts_int.insert(39); // ZMQ_DELAY_ATTACH_ON_CONNECT or ZMQ_IMMEDIATE
     opts_int.insert(40); // ZMQ_XPUB_VERBOSE
     opts_int.insert(41); // ZMQ_ROUTER_RAW
     opts_int.insert(42); // ZMQ_IPV6
@@ -1544,8 +1544,20 @@ namespace zmq {
     opts_binary.insert(49); // ZMQ_CURVE_SECRETKEY
     opts_binary.insert(50); // ZMQ_CURVE_SERVERKEY
     opts_int.insert(51); //ZMQ_PROBE_ROUTER
+    opts_int.insert(52); //ZMQ_REQ_CORRELATE
+    opts_int.insert(53); //ZMQ_REQ_RELAXED
+    opts_int.insert(54); //ZMQ_CONFLATE
     opts_binary.insert(55); // ZMQ_ZAP_DOMAIN
+    opts_int.insert(56); //ZMQ_ROUTER_HANDOVER
+    opts_int.insert(57); //ZMQ_TOS
+    opts_binary.insert(61); //ZMQ_CONNECT_RID
+    opts_int.insert(62); //ZMQ_GSSAPI_SERVER
+    opts_binary.insert(63); //ZMQ_GSSAPI_PRINCIPAL
+    opts_binary.insert(64); //ZMQ_GSSAPI_SERVICE_PRINCIPAL
+    opts_int.insert(65); //ZMQ_GSSAPI_PLAINTEXT
     opts_int.insert(66); //ZMQ_HANDSHAKE_IVL
+    opts_binary.insert(68); //ZMQ_SOCKS_PROXY
+    opts_int.insert(69); //ZMQ_XPUB_NODROP
     #endif
 
     NODE_DEFINE_CONSTANT(target, ZMQ_CAN_DISCONNECT);

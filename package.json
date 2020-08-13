@@ -1,11 +1,11 @@
 {
   "name": "zmq",
-  "version": "2.15.3",
+  "version": "2.15.3-1",
   "description": "Bindings for node.js and io.js to ZeroMQ",
   "main": "index",
   "repository": {
     "type": "git",
-    "url": "http://github.com/JustinTulloss/zeromq.node.git"
+    "url": "http://github.com/sekrasoft/zeromq.node.git"
   },
   "dependencies": {
     "bindings": "~1.2.1",
